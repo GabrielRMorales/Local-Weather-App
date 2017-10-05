@@ -31,13 +31,7 @@
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>
 $(document).ready(function(){
-var ktemp;
-var ftemp;
-var ctemp;
-var f=true;
-var c=false;
-var description;
-var code;
+var ktemp, ftemp, ctemp, f=true, c=false, description, code;
 $.getJSON("http://ip-api.com/json", function(data){
 var api="http://api.openweathermap.org/data/2.5/weather?zip=" +data.zip+","+data.countryCode+"&appid=36584e7259790df669629497aec20cbc";
   $.getJSON(api, function(data){
@@ -62,7 +56,7 @@ $("#description").html(description);
          $("#icon").append("<img src='http://openweathermap.org/img/w/01d.png'>");
          $("body").css("background-image", "url(http://vignette4.wikia.nocookie.net/phobia/images/a/aa/Snow.jpg/revision/latest?cb=20161109045734)");
     } 
-else {
+    else {
          $("#icon").append("<img src='http://openweathermap.org/img/w/50d.png'>");
          $("body").css("background-image", "url(https://c2.staticflickr.com/6/5099/5414699943_b433f97179_b.jpg)");
     }  
