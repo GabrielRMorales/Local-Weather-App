@@ -29,54 +29,7 @@
         <button id="change">F/C</button>
         </main>
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script>
-$(document).ready(function(){
-var ktemp, ftemp, ctemp, f=true, c=false, description, code;
-$.getJSON("http://ip-api.com/json", function(data){
-var api="http://api.openweathermap.org/data/2.5/weather?zip=" +data.zip+","+data.countryCode+"&appid=36584e7259790df669629497aec20cbc";
-  $.getJSON(api, function(data){
-ktemp=data.main.temp;
-ftemp=Math.round(ktemp*(9/5) - 459.67);
-ctemp=Math.round((ftemp-32)*(5/9));
-description=data.weather[0].description;
-code=data.weather[0].id;
-$("#temp").html(ftemp+" F");
-$("#description").html(description);
-
-    if (code>=200&&code<=232){
-         $("#icon").append("<img src='http://openweathermap.org/img/w/11d.png'>");
-         $("body").css("background-image", "url(http://www.homeadvisor.com/r/wp-content/uploads/2015/03/Dollarphotoclub_43826198-1024x680.jpg)");
-    }
-    else if ((code>=300&&code<=321)||(code>=500&&code<=531)){
-         $("#icon").append("<img src='http://openweathermap.org/img/w/10d.png'>");
-         $("body").css("background-image", "url(https://i.ytimg.com/vi/LbAigABOm_E/maxresdefault.jpg)");
-    }
-    
-    else if (ftemp>=75){
-         $("#icon").append("<img src='http://openweathermap.org/img/w/01d.png'>");
-         $("body").css("background-image", "url(http://vignette4.wikia.nocookie.net/phobia/images/a/aa/Snow.jpg/revision/latest?cb=20161109045734)");
-    } 
-    else {
-         $("#icon").append("<img src='http://openweathermap.org/img/w/50d.png'>");
-         $("body").css("background-image", "url(https://c2.staticflickr.com/6/5099/5414699943_b433f97179_b.jpg)");
-    }  
-});    
-$("#change").click(function(){
-if (c==false){
-   $("#temp").html(ctemp+ " C");
-   f=false;
-   c=true;
-}
-else if (c==true){
-    $("#temp").html(ftemp+" F");
-    f=true;
-    c=false;
-}
- });   
-  });  
-
- });
-        </script>
+        <script src="js/main.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
