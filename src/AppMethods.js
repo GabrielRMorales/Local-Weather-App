@@ -25,10 +25,17 @@ const convertToDay=(date)=>{
     return days[day.getDay()];
   }
 
-
 const getFahrenheit=(temperature)=>{
-    return Math.round(temperature*(9/5) - 459.67);
+    return temperature*(9/5) + 32;
   }
+
+const getCelsius=(temperature)=>{
+  return (temperature - 32) * (5/9);
+}
+
+const convertTemp=(useF,temp)=>{
+  return useF===true ? getFahrenheit(temp): getCelsius(temp);
+}
 
 const noRepeatDays=(arr)=>{
     let dayToCheck;
@@ -42,4 +49,4 @@ const noRepeatDays=(arr)=>{
   }
 
 
-export {convertToDay, getFahrenheit, noRepeatDays, getWeather};
+export {convertToDay, convertTemp, getFahrenheit, noRepeatDays, getWeather};
