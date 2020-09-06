@@ -21,13 +21,10 @@
   }
 }
 
-.App-link {
+.App-link,h1,.active, .day {
   color: #61dafb;
 }
 
-.main-display {
-  
-}
 .day {
   margin: 7px 0;
 }

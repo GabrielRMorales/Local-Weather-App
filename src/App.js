@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import "./DisplayWeather";
-import DisplayWeather from './DisplayWeather';
+import "./ManageWeather";
+import ManageWeather from './ManageWeather';
 
 function App() {
   
@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
         <h1>Five-Day Forecast</h1>
-        <DisplayWeather/>
+        <ManageWeather/>
     </div>
   );
 }
