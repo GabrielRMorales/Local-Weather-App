@@ -1,8 +1,22 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Gabriel's notes: 
+//after setting up server.js up and the rest of the files...
+//run: npm run build (to optimize build-this line is instructed but may not be necessary 1/2)
+//then: node server/server.js (this line is instructed but didn't work-led to error 2/3)
+//Error: ENOENT: no such file or directory, stat '/home/gabriel/Desktop/Coding/projectsToComplete/public/index.html' (3/3)
+//the following two commands on the terminal are what got it to work locally-node server/server.js caused errors
+//do: npm install -g server
+//then: serve -s build
+//also: changed the "start" in the package.json to "serve -s build" (may not have been necessary)
+//also: added "server -s build" as the build for heroku in the Procfile (previously it was using node App.js by default)
+//go to localhost:5000 (not 3000)
+
 ## Available Scripts
 
 In the project directory, you can run:
+serve -s build (to serve as a static server as suggested by terminal)
+
 
 ### `npm start`
 

@@ -24,6 +24,7 @@ app.listen(port, ()=>{
 //do: npm install -g server
 //then: serve -s build
 //also: changed the "start" in the package.json to "serve -s build"
+//also: added "server -s build" as the build for heroku in the Procfile (previously it was using node App.js by default)
 //go to localhost:5000 (not 3000)
 
 

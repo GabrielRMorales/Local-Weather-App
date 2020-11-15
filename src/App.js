@@ -3,8 +3,7 @@ import './App.css';
 import "./ManageWeather";
 import ManageWeather from './ManageWeather';
 
-function App() {
-  
+function App() {  
   
   return (
     <div className="App">
