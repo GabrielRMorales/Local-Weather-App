@@ -23,6 +23,7 @@ app.listen(port, ()=>{
 //the following two commands on the terminal are what got it to work-node server/server.js caused errors
 //do: npm install -g server
 //then: serve -s build
+//also: changed the "start" in the package.json to "serve -s build"
 //go to localhost:5000 (not 3000)
 
 
