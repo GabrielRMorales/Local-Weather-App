@@ -1,17 +1,18 @@
-import path from "path";
+const path =require("path");
 //changed from const express = require("express");
 //added "type": "module" to package.json to allow import statements
-import express from "express";
+const express = require("express");
 
 const app=express();
-const __dirname=path.resolve();
-//const publicPath = path.join(__dirname,"..", "public");
-const port = process.env.PORT || 3000;
 
-//app.use(express.static(publicPath));
+const publicPath = path.join(__dirname,"../", "public");
+const port = 5000;
+
+app.use(express.static(publicPath));
 app.get("/",(req,res)=>{
-  
-    res.sendFile(path.join(__dirname+"/public/index.html"));
+    res.sendFile("index.html");
+    //can use current config or remove publish path and uncomment out the below part
+    //res.sendFile(path.join(__dirname+"./../public/index.html"));
 })
 
 /*app.get("*",(req,res)=>{
