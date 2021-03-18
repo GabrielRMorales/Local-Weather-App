@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/GabrielRMorales/GabrielRMorales.github.io.git/static/css/main.177342b6.chunk.css",
+    "main.js": "/GabrielRMorales/GabrielRMorales.github.io.git/static/js/main.cca20e59.chunk.js",
+    "main.js.map": "/GabrielRMorales/GabrielRMorales.github.io.git/static/js/main.cca20e59.chunk.js.map",
+    "runtime-main.js": "/GabrielRMorales/GabrielRMorales.github.io.git/static/js/runtime-main.b91f26d3.js",
+    "runtime-main.js.map": "/GabrielRMorales/GabrielRMorales.github.io.git/static/js/runtime-main.b91f26d3.js.map",
+    "static/js/2.e64ec58c.chunk.js": "/GabrielRMorales/GabrielRMorales.github.io.git/static/js/2.e64ec58c.chunk.js",
+    "static/js/2.e64ec58c.chunk.js.map": "/GabrielRMorales/GabrielRMorales.github.io.git/static/js/2.e64ec58c.chunk.js.map",
+    "index.html": "/GabrielRMorales/GabrielRMorales.github.io.git/index.html",
+    "static/css/main.177342b6.chunk.css.map": "/GabrielRMorales/GabrielRMorales.github.io.git/static/css/main.177342b6.chunk.css.map",
+    "static/js/2.e64ec58c.chunk.js.LICENSE.txt": "/GabrielRMorales/GabrielRMorales.github.io.git/static/js/2.e64ec58c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b91f26d3.js",
+    "static/js/2.e64ec58c.chunk.js",
+    "static/css/main.177342b6.chunk.css",
+    "static/js/main.cca20e59.chunk.js"
+  ]
+}
