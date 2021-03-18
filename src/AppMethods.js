@@ -4,8 +4,8 @@ const dotenv = require("dotenv").config();
 const getWeather=()=>{
     const key="36584e7259790df669629497aec20cbc";
     //process.env.KEY;      
-    return axios.get("http://ip-api.com/json").then(res=>{
-      return axios.get("http://api.openweathermap.org/data/2.5/forecast?zip="+res.data["zip"]+",us&appid="+key);
+    return axios.get("https://ip-api.com/json").then(res=>{
+      return axios.get("https://api.openweathermap.org/data/2.5/forecast?zip="+res.data["zip"]+",us&appid="+key);
     }).then(function(res){
         return noRepeatDays(res.data.list).slice(0,5);
     });
